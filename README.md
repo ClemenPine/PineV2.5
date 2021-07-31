@@ -40,3 +40,10 @@ Top DSFBs:
 	td 0.215%	hl 0.213%	oa 0.202%	lk 0.186%
 	ml 0.177%	eu 0.176%	bc 0.155%	dt 0.155%
 ```
+
+And here's the layout in text-form:
+```
+y r d w p  k l o u ,  
+s n t c g  m h a e i  
+x z v f b  j q ' / . 
+```
