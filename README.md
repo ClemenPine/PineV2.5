@@ -13,7 +13,7 @@ Common letters are placed in easily accessible locations, lowering the amount of
 ## Analysis
 
 Pine is primarily optimized for low sfb and dsfb use; however, it scores very well in other metrics as well.
-It focuses more on rolling rather than alternation, while also keeping onehands and redirects to a minimum. Index and center column use is also fairly low as well. Pine ranks among the top layouts when these metrics are considered
+It focuses more on rolling rather than alternation, while also keeping onehands and redirects to a minimum. Index and center column use is also fairly low as well. Pine ranks among the top layouts when these metrics are considered.
 
 Below are the results from a powerful analyzer made by [Semi](https://github.com/semilin):
 
