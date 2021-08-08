@@ -47,3 +47,13 @@ y r d w p  k l o u ,
 s n t c g  m h a e i  
 x z v f b  j q ' / . 
 ```
+
+## Glossary
+
+Here are some definitions of some of the terms used here in case you aren't familiar with them:
+1. SFB (same-finger bigram) - When two letters are pressed with the same finger one after another. `th` is an example of one. Note that sfbs of the same letter such as `ll` are often excluded because they cannot be optimized for in traditional layout design.
+2. dSFB (disjointed sfb) - When two letters are pressed with the same finger and separated by some letters. An example would be the letter pair `yu` in `you`.
+3. Alternation - Pressing two consequtive letters with different hands. 
+4. Rolling - Pressing two or more consequtive letters on the same hand in the same direction. Example: 'sdf' in qwerty is a roll.
+5. Redirect - Pressing three or more consequtive letters on the same hand in which the direction changes. Example 'sfd' on qwerty. 
+6. Onehand - Typing an entire word using only one hand. Qwerty has a lot of these: such as `reverberated`.
