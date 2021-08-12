@@ -56,4 +56,4 @@ Here are some definitions of some of the terms used here in case you aren't fami
 3. Alternation - Pressing two consequtive letters with different hands. 
 4. Rolling - Pressing two or more consequtive letters on the same hand in the same direction. Example: 'sdf' in qwerty is a roll.
 5. Redirect - Pressing three or more consequtive letters on the same hand in which the direction changes. Example 'sfd' on qwerty. 
-6. Onehand - Typing an entire word using only one hand. Qwerty has a lot of these: such as `reverberated`.
+6. Onehand - A roll with exactly 3 letters, such as 'sdf'
