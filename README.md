@@ -1,59 +1,70 @@
 # Pine Layout
 
-This is an alternative keyboard layout I created while testing my layout analyzer program:
+This is a keyboard layout I designed over the course of a few months, using a combination of computer generation and manual swapping. During this time, I came up with 3 different layouts, and I used each one exclusively for a few weeks to figure out which aspects of layout design were most important for comfortable and efficient typing. The following is the final layout I came up with:
 
-![Pine Layout](KB_US-Pine.svg)
+![Pine layout](src/images/KB_US-Pine25.svg)
 
-## Heatmap
+## Development
 
-Common letters are placed in easily accessible locations, lowering the amount of effort required. Additionally, bottom row use is decreased significantly from other layouts, in order to avoid row jumps and create comfortable rolls
+The main goal of this layout is to minimize letter combinations that hinder the flow of typing. Pine focuses on sfbs, redirects, and alternation as the major detriments to speed, and so all three of these metrics are minimized.
 
-![Pine Heatmap](pine-heatmap.png)
+When these metrics are minimized, other pleasant letter combinations are enhanced. This layout heavily focuses on rolls, which are both fast and intuitive to type.
 
-## Analysis
+The result of this uncommon pairing of high roll density and low redirection is a chord-like typing experience. Letters are often typed in pairs of two or three, but because all the vowels are on the right, long sequences typed with one hand are rare, and the layout never feels lopsided.
 
-Pine is primarily optimized for low sfb and dsfb use; however, it scores very well in other metrics as well.
-It focuses more on rolling rather than alternation, while also keeping onehands and redirects to a minimum. Index and center column use is also fairly low as well. Pine ranks among the top layouts when these metrics are considered.
+## Features
 
-Below are the results from a powerful analyzer made by [Semi](https://github.com/semilin):
+Here are some other nice things about the layout that weren't as important to the design, but are still nice regardless:
+- Common keyboard shortcuts, such as c, v, x, z, s, are very close to their original positions.
+- The left hand has very low bottom row use. This results in less finger travel because of the minimal row jumping
+- The pinkies have low sfb counts and movement. The pinkies are slow and weak fingers, and are not overloaded on this layout.
+- Easily alt-fingerable sfbs. I shifted the key placements within columns to make the common sfbs that do exist on this layout easy to reach with other fingers.
+
+## Data
+
+Here's some extra data from Semi's [analyzer](https://github.com/semilin/genkey), using quotes from MonkeyType as the corpus:
 
 ```
-Rolls: ~53.23%
-Alternates: ~33.38%
-Onehands: ~1.48%
-Redirects: ~5.48%
-Finger Speed (weighted): 0.36
-Finger Speed (unweighted): 5.58
-Highest Speed (weighted): 0.10 (RP)
-Highest Speed (unweighted): 1.23 (RI)
-Index Usage: 9.4% 11%
-Center Column Usage: 4.1% 3%
-SFBs: 0.606%
-DSFBs: 6.307%
+Pine25
+y l r d w  j m o u , 
+c s n t g  p h a e i ; 
+x z q v k  b f ' / . 
+Rolls: ~53.41%
+Alternates: ~34.04%
+Onehands: ~1.79%
+Redirects: ~4.14%
+Finger Speed (weighted): [0.36 1.03 0.76 3.54 1.96 1.29 1.01 1.42]
+Finger Speed (unweighted): [0.54 3.71 3.62 19.46 10.78 6.20 3.64 2.14]
+Highest Speed (weighted): 3.54 (LI)
+Highest Speed (unweighted): 19.46 (LI)
+Index Usage: 19.2% 13.0%
+SFBs: 0.713%
+DSFBs: 5.744%
 Top SFBs:
-	rn 0.133%	ys 0.122%	ue 0.089%	lk 0.049%
-	oa 0.040%	e/ 0.033%	sy 0.024%	lm 0.018%
+	rn 0.133%	mp 0.132%	ls 0.105%	ue 0.089%
+	mb 0.071%	tw 0.057%	sl 0.052%	oa 0.040%
 
-Top DSFBs:
-	ue 0.570%	rn 0.503%	ao 0.390%	i. 0.351%
-	nr 0.286%	i, 0.269%	o' 0.260%	hm 0.249%
-	td 0.215%	hl 0.213%	oa 0.202%	lk 0.186%
-	ml 0.177%	eu 0.176%	bc 0.155%	dt 0.155%
+Worst Bigrams:
+	ls 14.345	wt 13.700	ue 13.272	i. 12.199
+	o' 11.993	rn 11.317	mb 10.247	tg 9.915
+
+Score: 37.12
 ```
 
-And here's the layout in text-form:
-```
-y r d w p  k l o u ,  
-s n t c g  m h a e i  
-x z v f b  j q ' / . 
-```
+And here's a heatmap:
+
+![Pine heatmap](src/heatmaps/pine25-heatmap.png)
 
 ## Glossary
 
-Here are some definitions of some of the terms used here in case you aren't familiar with them:
-1. SFB (same-finger bigram) - When two letters are pressed with the same finger one after another. `th` is an example of one. Note that sfbs of the same letter such as `ll` are often excluded because they cannot be optimized for in traditional layout design.
-2. dSFB (disjointed sfb) - When two letters are pressed with the same finger and separated by some letters. An example would be the letter pair `yu` in `you`.
-3. Alternation - Pressing two consequtive letters with different hands. 
-4. Rolling - Pressing two or more consequtive letters on the same hand in the same direction. Example: 'sdf' in qwerty is a roll.
-5. Redirect - Pressing three or more consequtive letters on the same hand in which the direction changes. Example 'sfd' on qwerty. 
-6. Onehand - A roll with exactly 3 letters, such as 'sdf'
+- Rolls -> two consecutively typed letters on one hand and one letter typed on the other
+- Alternates -> a letter typed on one hand, followed by another on the other, followed by a letter on the one hand
+- Onehands -> all three letters typed on the same hand, in a continuous motion, like `sdf` on qwerty
+- Redirects -> all three letters typed on the same hand, but in a disjointed motion, like 'sfd' on qwerty
+- SFBs -> two consecutive letters typed with the same finger
+- DSFBs -> two letters typed with the same finger separated by `n` characters, where `n > 0`
+- Finger Speed -> the speed at which a finger must move 
+
+## Contact
+
+If you have any questions or comments, feel free to ping me on discord at ClemenPine#4679
