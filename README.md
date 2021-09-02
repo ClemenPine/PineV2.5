@@ -25,7 +25,7 @@ Here are some other nice things about the layout that weren't as important to th
 Here's some extra data from Semi's [analyzer](https://github.com/semilin/genkey), using quotes from MonkeyType as the corpus:
 
 ```
-Pine25
+Pine
 y l r d w  j m o u , 
 c s n t g  p h a e i ; 
 x z q v k  b f ' / . 
